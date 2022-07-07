@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+
+
+
+
+
+function person1(fName,lName,age,skills,date0fbirth,address,married,profession)
+{
+    this.fName=fName;
+    this.lName=lName;
+    this.age=age;
+    this.skills=skills;
+    this.date0fbirth=date0fbirth;
+    this.address=address;
+    this.married=married;
+    this.profession=profession;
+}
+
+var p1=new person1("Rajesh","Ramesh",22,["aws","python","core","Spring","github"],"08/06/1999",{city:"yadadri",pincode:"523456"},false,"Engineer")
+
+var p2=new person1("Giridhar","Balu",23,["Docker","react","Finance"],"12/08/1988",true,"Asisstant")
+ 
+var p2=Object.create(p1);
+print=function()
+{
+    console.log(p1);
+    console.log(p2.address);
+    
+}();
+
+console.log(p2)
+        
+    </script>
+    </body>
+</html>
