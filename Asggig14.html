@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math</h2>
+
+<p>Math.floor(Math.random() * 100) + 1) returns a random integer between 1 and 
+100 (both included):</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+Math.floor(Math.random() * 100) + 1;
+    
+    </script>
+    <script>
+    <p>Every time you click the button, getRndInteger(min, max) returns a random number between 1 and 100 (both included):</p>
+
+<button onclick="document.getElementById('demo').innerHTML = getRndInteger(1,10)">Click Me</button>
+
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+</script>
+    <script>
+        function countEvenOdd(n)
+{
+    let even_count = 0;
+    let odd_count = 0;
+    while (n > 0)
+    {
+        let rem = n % 10;
+        if (rem % 2 == 0)
+            even_count++;
+        else
+            odd_count++;
+        n = Math.floor(n / 10);
+    }
+    document.write("Even count : "
+        + even_count);
+    document.write("<br>" + "Odd count : "
+        + odd_count);
+    if (even_count % 2 == 0 &&
+        odd_count % 2 != 0)
+        return 1;
+    else
+        return 0;
+}
+ 
+// Driver Code
+ 
+    let n;
+    n = 2335453;
+    let t = countEvenOdd(n);
+    if (t == 1)
+        document.write("<br>" + "YES" + "<br>");
+    else
+        document.write("<br>"+"NO" + "<br>");
+ 
+
+ 
+</script>
+
+
+</body>
+</html>
